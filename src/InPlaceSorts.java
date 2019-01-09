@@ -1,10 +1,10 @@
 public class InPlaceSorts
 {
-    public static void selectionSort(int[] arr)
+    public static void selectionSort(double[] arr)
     {
         int minPos=0;
-        int minVal=0;
-        for( int curPos = 0;curPos<arr.length-1; curPos++)
+        double minVal=0.0;
+        for(int curPos = 0;curPos<arr.length-1; curPos++)
         {
             minPos = curPos;
             minVal = arr[curPos];
@@ -15,11 +15,26 @@ public class InPlaceSorts
                     minVal=arr[i];
                     minPos=i;
                 }
-                swap(arr,arr[curPos],arr[minPos]);
+                doubleSwap(arr,curPos,minPos);
             }
         }
     }
-}
+    public static void doubleSwap(double[] arr, int i,int j)
+    {
+        double a = arr[i];
+        arr[i] = arr[j];
+        arr[j] = a;
+    }
+    public static double[] randDouble(int count)
+    {
+        double[] big = new double[count];
+        for(int i = 0; i<big.length;i++)
+        {
+            big[i] = Math.random()*10001;
+        }
+        return big;
+    }
+
 
 
 

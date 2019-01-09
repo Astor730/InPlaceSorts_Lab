@@ -1,2 +1,4 @@
-public class InPlaceSorts {
+public class InPlaceSorts
+{
+
 }

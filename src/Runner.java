@@ -1,10 +1,12 @@
 public class Runner
 {
     public static void main(String[] args){
-        //Create a random array of integers
+        //Create a random array of integers,double and strings
          int[] intBefore = InPlaceSorts.randInt(10);
 
          double[] doubleBefore = InPlaceSorts.randDouble(10);
+
+         String[] stringBefore = InPlaceSorts.randomStringArr(10,10);
 
         //Prints out array of integers out before you sort
         System.out.println("This is your list of integers");
@@ -42,6 +44,8 @@ public class Runner
             System.out.println(num1+" ");
         }
         System.out.println();
+
+
 
 
     }

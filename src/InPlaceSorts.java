@@ -3,16 +3,13 @@ public class InPlaceSorts
     public static void selectionSort(double[] arr)
     {
         int minPos=0;
-        double minVal=0.0;
         for(int curPos = 0;curPos<arr.length-1; curPos++)
         {
             minPos = curPos;
-            minVal = arr[curPos];
-            for(int i =0; i<arr.length;i++)
+            for(int i =curPos; i<arr.length;i++)
             {
-                if(minVal>arr[i])
+                if(arr[minPos]>arr[i])
                 {
-                    minVal=arr[i];
                     minPos=i;
                 }
                 doubleSwap(arr,curPos,minPos);
@@ -33,14 +30,14 @@ public class InPlaceSorts
     }
     public static void insertionSort(int[] arr)
     {
-        for(int curCheck = 0; curCheck <arr.length-1;curCheck++)
+        for(int curCheck = 0; curCheck <arr.length-2;curCheck++)
         {
             if(arr[curCheck]>arr[curCheck+1])
             {
-                for(int i =0; i>=0;i--)
+                for(int i =curCheck; i>=0;i--)
                 {
                     if (arr[i] > arr[i+1])
-                    { intSwap(arr,i,i+1);}
+                    { intSwap(arr,arr[i],arr[i+1]);}
                 }
             }
         }

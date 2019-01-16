@@ -17,7 +17,7 @@ public class Runner
         }
         System.out.println();
 
-        //Sort a String using swap and bubble swap
+        //Sort Calls the insertion sort
         InPlaceSorts.insertionSort(intBefore);
 
         //Prints integer array out after you sort
@@ -37,7 +37,10 @@ public class Runner
         }
         System.out.println();
 
-        //Prints double array out after ypu sort
+        //Sort Calls the insertion sort
+        InPlaceSorts.selectionSort(doubleBefore);
+
+        //Prints double array out after you sort
         System.out.println("After: ");
         for (double num1:doubleBefore)
         {
@@ -45,8 +48,24 @@ public class Runner
         }
         System.out.println();
 
+        //Prints out array of doubles before we sort.
+        System.out.println("This is your list of doubles");
+        System.out.println("Before: ");
+        for (String num2:stringBefore)
+        {
+            System.out.println(num2+" ");
+        }
+        System.out.println();
 
+        //Sort Calls the insertion sort
+        InPlaceSorts.bubleSort(stringBefore);
 
-
+        //Prints double array out after you sort
+        System.out.println("After: ");
+        for (String num2:stringBefore)
+        {
+            System.out.println(num2+" ");
+        }
+        System.out.println();
     }
 }

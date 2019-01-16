@@ -12,8 +12,9 @@ public class InPlaceSorts
                 {
                     minPos=i;
                 }
-                doubleSwap(arr,curPos,minPos);
+
             }
+            doubleSwap(arr,curPos,minPos);
         }
     }
     public static void bubleSort(String [ ] arr){
@@ -30,7 +31,7 @@ public class InPlaceSorts
     }
     public static void insertionSort(int[] arr)
     {
-        for(int curCheck = 0; curCheck <arr.length-2;curCheck++)
+        for(int curCheck = 0; curCheck <arr.length-1;curCheck++)
         {
             if(arr[curCheck]>arr[curCheck+1])
             {

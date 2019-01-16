@@ -37,7 +37,7 @@ public class InPlaceSorts
                 for(int i =curCheck; i>=0;i--)
                 {
                     if (arr[i] > arr[i+1])
-                    { intSwap(arr,arr[i],arr[i+1]);}
+                    { intSwap(arr,i,i+1);}
                 }
             }
         }
